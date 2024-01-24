@@ -1,4 +1,4 @@
-
+package Week8.B1;
 
 public class MotorBike extends Vehicle {
     private boolean hasSidecar;

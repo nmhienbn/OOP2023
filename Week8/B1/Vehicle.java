@@ -1,4 +1,4 @@
-
+package Week8.B1;
 
 public abstract class Vehicle {
     protected String brand;

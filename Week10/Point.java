@@ -1,6 +1,4 @@
-package Week7.B2;
 
-import java.util.Objects;
 
 public class Point {
     private double pointX;
@@ -33,27 +31,16 @@ public class Point {
     }
 
     /** Hien. */
-    public double distance(Point newPoint) {
-        return Math.sqrt((pointX - newPoint.pointX) * (pointX - newPoint.pointX)
-                + (pointY - newPoint.pointY) * (pointY - newPoint.pointY));
+    public double getDistance(Point other) {
+        return Math.sqrt(Math.pow(this.pointX - other.pointX, 2)
+                + Math.pow(this.pointY - other.pointY, 2));
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (o instanceof Point) {
-            Point other = (Point) o;
-            return pointX == other.pointX && pointY == other.pointY;
-        }
-        return false;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getPointX(), getPointY());
-    }
-
+    /** Hien. */
     @Override
     public String toString() {
-        return "(" + pointX + "," + pointY + ')';
+        return "(" + String.format("%.2f", pointX)
+                + "," + String.format("%.2f", pointY)
+                + ')';
     }
 }

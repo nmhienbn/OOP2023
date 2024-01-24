@@ -1,4 +1,4 @@
-
+package Week7.B1;
 
 public abstract class Shape {
     protected String color;

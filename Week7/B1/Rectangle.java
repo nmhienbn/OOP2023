@@ -1,4 +1,4 @@
-
+package Week7.B1;
 
 public class Rectangle extends Shape {
     protected double width;

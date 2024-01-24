@@ -1,4 +1,4 @@
-
+package Week7.B1;
 
 public class Square extends Rectangle {
     /** Hien. */
